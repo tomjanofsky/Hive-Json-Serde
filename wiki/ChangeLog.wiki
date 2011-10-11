@@ -1,0 +1,14 @@
+#summary History of changes
+#labels Featured
+
+= Change Log=
+
+== Release 0.2 ==
+
+Fixed
+ * Issue 4 to handle type conversion
+ * Issue 5 to work with case-insensitive column names
+
+== Release 0.1 ==
+
+First release. Handles basic JSON object.

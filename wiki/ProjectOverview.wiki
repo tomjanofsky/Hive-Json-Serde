@@ -1,0 +1,27 @@
+#summary Overview of this JSON SerDe for Hive project
+#labels Featured
+
+= Overview =
+
+[http://hadoop.apache.org/hive/ Hive] ([http://wiki.apache.org/hadoop/Hive wiki]) is a fantastic addition to [http://hadoop.apache.org/ Hadoop]. From Hive's website:
+
+  Hive is a data warehouse infrastructure built on top of Hadoop that provides tools to
+  enable easy data summarization, adhoc querying and analysis of large datasets data stored
+  in Hadoop files. It provides a mechanism to put structure on this data and it also
+  provides a simple query language called Hive QL which is based on SQL and which enables
+  users familiar with SQL to query this data. At the same time, this language also allows 
+  traditional map/reduce programmers to be able to plug in their custom mappers and
+  reducers to do more sophisticated analysis which may not be supported by the built-in
+  capabilities of the language. 
+
+Unfortunately, as at the time of writing, Hive is unable to read and write data in [http://www.json.org/ JSON] format.
+
+To remedy this, I have created a JSON !SerDe available here as source or as a JAR file you can add (See [GettingStarted]).
+
+The JSON library I used is the standard Java one found at [http://www.json.org/java/index.html json.org]. 
+
+= Limitations =
+
+At the present time, the !SerDe has the following limitations:
+ * Cannot be used to write JSON files (need to implement Serialization: Issue #1)
+ * Limited support for complex tables/JSON files (Issue #2)
